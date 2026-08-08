@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Editar Perfil | UDI Creativa</title>
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/edit-profile.css">
+
+</head>
+
+<body>
+
+<main class="edit-profile-page">
+
+<header class="page-header">
+
+<a href="profile.html"
+class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h2>
+
+Editar perfil
+
+</h2>
+
+</header>
+
+<!-- FOTO -->
+
+<section class="photo-section">
+
+<div class="cover-photo">
+
+<img src="assets/cover.jpg">
+
+<button>
+
+<i class="fa-solid fa-camera"></i>
+
+</button>
+
+</div>
+
+<div class="profile-photo">
+
+<img src="assets/profile.jpg">
+
+<button>
+
+<i class="fa-solid fa-camera"></i>
+
+</button>
+
+</div>
+
+</section>
+
+<!-- INFORMACIÓN -->
+
+<section class="form-card">
+
+<div class="input-group">
+
+<label>
+
+Nombre completo
+
+</label>
+
+<input
+type="text"
+value="Alexander Sainz">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Biografía
+
+</label>
+
+<textarea rows="4">Apasionado por el Branding, UI/UX y Diseño Digital. Me gusta crear experiencias visuales modernas centradas en el usuario.</textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Ciudad
+
+</label>
+
+<input
+type="text"
+value="Santa Cruz, Bolivia">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Nivel
+
+</label>
+
+<select>
+
+<option>1°</option>
+
+<option>2°</option>
+
+<option>3°</option>
+
+<option>4°</option>
+
+<option>5°</option>
+
+<option>6°</option>
+
+<option>7°</option>
+
+<option selected>8°</option>
+
+<option>9°</option>
+
+<option>Licenciatura</option>
+
+</select>
+
+</div>
+</section>
+
+<!-- ESPECIALIDADES -->
+
+<section class="card">
+
+    <h3>Especialidades</h3>
+
+    <div id="specialtiesContainer" class="tags-container">
+
+    </div>
+
+    <input
+        type="text"
+        id="specialtyInput"
+        class="tag-input"
+        placeholder="Escribe una especialidad y presiona Enter">
+
+</section>
+
+<!-- SOFTWARE -->
+
+
+<section class="card">
+
+    <h3>Software</h3>
+
+    <div id="softwareContainer" class="tags-container">
+
+    </div>
+
+    <input
+        type="text"
+        id="softwareInput"
+        class="tag-input"
+        placeholder="Escribe un software y presiona Enter">
+
+</section>
+
+<!-- BOTONES -->
+
+<section class="buttons">
+
+    <a href="profile.html" class="cancel-btn">
+
+        <i class="fa-solid fa-xmark"></i>
+
+        Cancelar
+
+    </a>
+
+    <button id="saveBtn">
+
+        <i class="fa-solid fa-floppy-disk"></i>
+
+        Guardar cambios
+
+    </button>
+
+</section>
+
+</main>
+
+<script src="js/edit-profile.js"></script>
+
+</body>
+
+</html>

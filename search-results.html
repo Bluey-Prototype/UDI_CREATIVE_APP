@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Resultados | UDI Creativa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="stylesheet" href="css/search-results.css">
+
+</head>
+
+<body>
+
+<main class="search-page">
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+        <a href="home.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
+        <h2>Resultados</h2>
+
+    </header>
+
+    <!-- BUSCADOR -->
+
+    <section class="search-section">
+
+        <div class="search-box">
+
+            <i class="fa-solid fa-magnifying-glass"></i>
+
+            <input
+                type="text"
+                placeholder="Buscar..."
+                value="Juan"
+                readonly>
+
+        </div>
+
+    </section>
+
+    <!-- FILTROS -->
+
+    <section class="filters">
+
+        <button class="filter-btn active" data-filter="all">
+
+            🌎 Todos
+
+        </button>
+
+        <button class="filter-btn" data-filter="person">
+
+            👤 Personas
+
+        </button>
+
+        <button class="filter-btn" data-filter="project">
+
+            🎨 Proyectos
+
+        </button>
+
+        <button class="filter-btn" data-filter="job">
+
+            💼 Convocatorias
+
+        </button>
+
+        <button class="filter-btn" data-filter="event">
+
+            📅 Eventos
+
+        </button>
+
+        <button class="filter-btn" data-filter="resource">
+
+            📚 Recursos
+
+        </button>
+
+    </section>
+
+    <!-- RESULTADOS -->
+
+    <section class="results">
+
+        <!-- PERSONA -->
+
+        <div class="result-card person">
+
+            <img src="assets/profilesearch.jpg" alt="Usuario">
+
+            <div class="result-info">
+
+                <span class="badge">
+
+                    Persona
+
+                </span>
+
+                <h3>Juan Pérez</h3>
+
+                <p>
+
+                    Diseñador UX/UI · Universidad UDI
+
+                </p>
+
+                <a href="profile2.html" class="result-btn">
+
+                    Ver perfil
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- PROYECTO -->
+
+        <div class="result-card project">
+
+            <img src="assets/project1.jpg" alt="Proyecto">
+
+            <div class="result-info">
+
+                <span class="badge">
+
+                    Proyecto
+
+                </span>
+
+                <h3>
+
+                    Rediseño de marca para Café Aroma
+
+                </h3>
+
+                <p>
+
+                    Proyecto de Branding e Identidad Visual.
+
+                </p>
+
+                <a href="project-detail.html" class="result-btn">
+
+                    Ver proyecto
+
+                </a>
+
+            </div>
+
+        </div>
+
+        <!-- CONVOCATORIA -->
+
+        <div class="result-card job">
+
+            <img src="assets/job.jpg" alt="Empleo">
+
+            <div class="result-info">
+
+                <span class="badge">
+
+                    Convocatoria
+
+                </span>
+
+                <h3>
+
+                    Diseñador Gráfico Junior
+
+                </h3>
+
+                <p>
+
+                    Creative Agency · Tiempo completo
+
+                </p>
+
+                <a href="job-detail.html" class="result-btn">
+
+                    Ver detalles
+
+                </a>
+
+            </div>
+
+        </div>
+
+
+</main>
+
+<script src="js/search-results.js"></script>
+
+</body>
+
+</html>

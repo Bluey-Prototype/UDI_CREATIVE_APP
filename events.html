@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Eventos | UDI Creativa</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/events.css">
+
+</head>
+
+<body>
+
+<main class="events-page">
+
+    <!-- HEADER -->
+
+    <header class="page-header">
+
+        <a href="home.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
+        <h2>Eventos</h2>
+
+    </header>
+
+    <p class="page-description">
+
+        Descubre talleres, conferencias y actividades organizadas para la comunidad de Diseño Gráfico de la UDI.
+
+    </p>
+    <!-- =====================================
+        PRÓXIMO EVENTO DESTACADO
+===================================== -->
+
+<section class="featured-event">
+
+    <span class="featured-badge">
+
+        ⭐ Evento Destacado
+
+    </span>
+
+    <h2>
+
+        UX/UI Bootcamp 2026
+
+    </h2>
+
+    <p>
+
+        Aprende diseño de interfaces, investigación UX, prototipado en Figma y Design Systems junto a expertos de la industria.
+
+    </p>
+
+    <div class="countdown-container">
+
+        <span>
+
+            <i class="fa-solid fa-calendar-days"></i>
+
+            Comienza en
+
+        </span>
+
+        <div id="countdown" class="countdown">
+
+            5 días
+
+        </div>
+
+    </div>
+
+    <button class="featured-btn" id="featuredBtn">
+
+    Inscribirme
+
+</button>
+<p id="registerMessage" class="register-message">
+
+    ✅ ¡Te has inscrito correctamente!<br>
+
+    <span>Recibirás un recordatorio antes del evento.</span>
+
+</p>
+
+</section>
+
+    <!-- BUSCADOR -->
+
+    <div class="search-box">
+
+        <i class="fa-solid fa-magnifying-glass"></i>
+
+        <input
+            type="text"
+            placeholder="Buscar evento...">
+
+    </div>
+
+    <!-- FILTROS -->
+
+    <div class="filters">
+
+        <button class="active">🌎 Todos</button>
+
+        <button>🎤 Conferencias</button>
+
+        <button>🛠️ Talleres</button>
+
+        <button>🎨 Exposiciones</button>
+
+
+    </div>
+
+    <!-- EVENTO 1 -->
+
+    <article class="event-card">
+
+        <img src="assets/event1.jpg"
+             alt="Workshop UX">
+
+        <div class="event-content">
+
+            <span class="event-type">
+
+                Workshop
+
+            </span>
+
+            <h3>
+
+                Workshop de UX/UI
+
+            </h3>
+
+            <p>
+
+                Aprende metodologías de diseño centrado en el usuario y crea interfaces modernas.
+
+            </p>
+
+            <div class="event-info">
+
+                <span>
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    25 Ago 2026
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Campus UDI
+
+                </span>
+
+            </div>
+
+       <button class="event-btn">
+
+    Inscribirme
+
+</button>
+
+        </div>
+
+    </article>
+
+    <!-- EVENTO 2 -->
+
+    <article class="event-card">
+
+        <img src="assets/event2.jpg"
+             alt="Conferencia">
+
+        <div class="event-content">
+
+            <span class="event-type">
+
+                Conferencia
+
+            </span>
+
+            <h3>
+
+                Tendencias del Diseño 2026
+
+            </h3>
+
+            <p>
+
+                Conferencia con profesionales del sector creativo sobre innovación y branding.
+
+            </p>
+
+            <div class="event-info">
+
+                <span>
+
+                    <i class="fa-solid fa-calendar"></i>
+
+                    02 Sep 2026
+
+                </span>
+
+                <span>
+
+                    <i class="fa-solid fa-location-dot"></i>
+
+                    Auditorio UDI
+
+                </span>
+
+            </div>
+
+            <button class="event-btn">
+
+    Inscribirme
+
+</button>
+
+        </div>
+
+    </article>
+
+</main>
+
+<script src="js/events.js"></script>
+
+</body>
+
+</html>

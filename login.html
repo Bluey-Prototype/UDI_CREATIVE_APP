@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login | UDI Creativa</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/style.css">
+<link rel="stylesheet" href="css/login.css">
+
+    <!-- Iconos -->
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+<main class="login-screen">
+
+    <div class="login-container">
+
+        <img src="assets/logo.png" class="login-logo">
+
+        <h1>¡Bienvenido!</h1>
+
+        <p>Inicia sesión para continuar</p>
+
+        <form>
+
+            <div class="input-group">
+
+                <label>Correo electrónico</label>
+
+                <input type="email" placeholder="ejemplo@udi.edu.bo">
+
+            </div>
+
+            <div class="input-group">
+
+                <label>Contraseña</label>
+
+                <div class="password-box">
+
+                    <input type="password" placeholder="••••••••">
+
+                    <i class="fa-regular fa-eye"></i>
+
+                </div>
+
+            </div>
+
+            <a href="forgot-password.html" class="forgot">
+    ¿Olvidaste tu contraseña?
+</a>
+
+            <button type="button" class="login-btn" onclick="window.location.href='home.html'">
+
+    Iniciar sesión
+
+</button>
+
+        </form>
+
+        <div class="separator">
+
+            <span></span>
+
+            <p>o continúa con</p>
+
+            <span></span>
+
+        </div>
+
+        <div class="social">
+
+            <button>
+                <i class="fa-brands fa-google"></i>
+                Google
+            </button>
+
+        </div>
+
+        <div class="register">
+
+            ¿No tienes una cuenta?
+
+            <a href="registro.html">
+
+                Crear cuenta
+
+            </a>
+
+        </div>
+
+    </div>
+
+</main>
+
+<script src="js/login.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Publicar Proyecto | UDI Creativa</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/upload-project.css">
+
+</head>
+
+<body>
+
+<main class="upload-page">
+
+<!--================ HEADER ================-->
+
+<header class="page-header">
+
+<a href="profile.html"
+class="back-btn">
+
+<i class="fa-solid fa-arrow-left"></i>
+
+</a>
+
+<h2>
+
+Publicar proyecto
+
+</h2>
+
+</header>
+
+<!--================ IMAGEN ================-->
+
+<section class="card">
+
+<h3>
+
+Archivo del proyecto
+
+</h3>
+
+<label for="imageUpload"
+class="upload-area">
+
+<i class="fa-solid fa-cloud-arrow-up"></i>
+
+<h4>
+
+Subir proyecto .PDF
+
+</h4>
+
+<p>
+
+Haz clic para seleccionar el proyecto.
+
+</p>
+
+</label>
+
+<input
+type="file"
+id="imageUpload"
+accept="image/*"
+hidden>
+
+<img
+id="previewImage"
+class="preview-image"
+src=""
+alt="Vista previa">
+
+</section>
+
+<!--================ INFORMACIÓN ================-->
+
+<section class="card">
+
+<h3>
+
+Información del proyecto
+
+</h3>
+
+<div class="input-group">
+
+<label>
+
+Título
+
+</label>
+
+<input
+type="text"
+placeholder="Ej. Rediseño de marca para Café Aroma">
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Descripción
+
+</label>
+
+<textarea
+rows="5"
+placeholder="Describe tu proyecto..."></textarea>
+
+</div>
+
+<div class="input-group">
+
+<label>
+
+Categoría
+
+</label>
+
+<select>
+
+<option>Branding</option>
+
+<option>UI / UX</option>
+
+<option>Editorial</option>
+
+<option>Packaging</option>
+
+<option>Publicidad</option>
+
+<option>Diseño Web</option>
+
+<option>Fotografía</option>
+
+<option>Ilustración</option>
+
+<option>Motion Graphics</option>
+
+</select>
+
+</div>
+
+</section>
+
+<!--================ HERRAMIENTAS ================-->
+
+<section class="card">
+
+<h3>
+
+Herramientas utilizadas
+
+</h3>
+
+<div
+id="toolsContainer"
+class="tags-container">
+
+</div>
+
+<input
+type="text"
+id="toolInput"
+class="tag-input"
+placeholder="Escribe una herramienta y presiona Enter">
+
+</section>
+
+<!--================ ETIQUETAS ================-->
+
+<section class="card">
+
+<h3>
+
+Etiquetas
+
+</h3>
+
+<div
+id="tagsContainer"
+class="tags-container">
+
+</div>
+
+<input
+type="text"
+id="tagInput"
+class="tag-input"
+placeholder="Escribe una etiqueta y presiona Enter">
+
+</section>
+
+<!--================ PRIVACIDAD ================-->
+
+<section class="card">
+
+<div class="switch-item">
+
+<div>
+
+<h3>
+
+Proyecto público
+
+</h3>
+
+<p>
+
+Permite que otros estudiantes puedan verlo.
+
+</p>
+
+</div>
+
+<label class="switch">
+
+<input
+type="checkbox"
+checked>
+
+<span class="slider"></span>
+
+</label>
+
+</div>
+
+</section>
+
+<!--================ BOTONES ================-->
+
+<section class="buttons">
+
+    <button id="publishBtn">
+
+        <i class="fa-solid fa-paper-plane"></i>
+
+        Publicar proyecto
+
+    </button>
+
+    <a href="profile.html" class="cancel-link">
+
+        Cancelar
+
+    </a>
+
+</section>
+
+</main>
+
+<script src="js/upload-project.js"></script>
+
+</body>
+
+</html>

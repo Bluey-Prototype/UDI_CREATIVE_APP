@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Privacidad | UDI Creativa</title>
+
+    <!-- Google Fonts -->
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+          rel="stylesheet">
+
+    <!-- Font Awesome -->
+
+    <link rel="stylesheet"
+          href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+    <!-- CSS -->
+
+    <link rel="stylesheet"
+          href="css/style.css">
+
+    <link rel="stylesheet"
+          href="css/privacy.css">
+
+</head>
+
+<body>
+
+<main class="privacy-page">
+
+    <!--================ HEADER ================-->
+
+    <header class="page-header">
+
+        <a href="settings.html" class="back-btn">
+
+            <i class="fa-solid fa-arrow-left"></i>
+
+        </a>
+
+        <h2>Privacidad</h2>
+
+    </header>
+
+    <p class="page-description">
+
+        Controla quién puede ver tu perfil e interactuar contigo dentro de UDI Creativa.
+
+    </p>
+
+    <!--================ ESTADO DEL PERFIL ================-->
+
+    <section class="privacy-status" id="privacyStatus">
+
+        <i class="fa-solid fa-earth-americas"></i>
+
+        <div>
+
+            <h3>Tu perfil es público</h3>
+
+            <p>
+
+                Otros estudiantes y empresas podrán encontrarte y ver tu portafolio.
+
+            </p>
+
+        </div>
+
+    </section>
+
+    <!--================ TARJETA ================-->
+
+    <section class="privacy-card">
+
+        <!-- Perfil público -->
+
+        <div class="switch-item">
+
+            <div>
+
+                <h4>Perfil público</h4>
+
+                <p>
+
+                    Permite que otros usuarios puedan ver tu perfil y portafolio.
+
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="publicProfile"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- En línea -->
+
+        <div class="switch-item">
+
+            <div>
+
+                <h4>Mostrar en línea</h4>
+
+                <p>
+
+                    Los demás podrán ver cuando estés conectado.
+
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="onlineStatus"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- Comentarios -->
+
+        <div class="switch-item">
+
+            <div>
+
+                <h4>Permitir comentarios</h4>
+
+                <p>
+
+                    Los usuarios podrán comentar tus proyectos.
+
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="allowComments"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- Mensajes -->
+
+        <div class="switch-item">
+
+            <div>
+
+                <h4>Permitir mensajes</h4>
+
+                <p>
+
+                    Los estudiantes podrán enviarte mensajes privados.
+
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="allowMessages"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+        <!-- Búsquedas -->
+
+        <div class="switch-item">
+
+            <div>
+
+                <h4>Aparecer en búsquedas</h4>
+
+                <p>
+
+                    Tu perfil podrá encontrarse desde el buscador de la aplicación.
+
+                </p>
+
+            </div>
+
+            <label class="switch">
+
+                <input
+                    type="checkbox"
+                    id="searchProfile"
+                    checked>
+
+                <span class="slider"></span>
+
+            </label>
+
+        </div>
+
+    </section>
+
+</main>
+
+<script src="js/privacy.js"></script>
+
+</body>
+
+</html>

@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Verificación | UDI Creativa</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/verify-code.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+
+</head>
+
+<body>
+
+    <main class="verify-screen">
+
+        <div class="verify-container">
+
+            <!-- Botón volver -->
+            <a href="forgot-password.html" class="back-btn">
+
+                <i class="fa-solid fa-arrow-left"></i>
+
+            </a>
+
+            <!-- Logo -->
+
+            <img src="assets/logo.png"
+                alt="Logo UDI Creativa"
+                class="verify-logo">
+
+            <h1>Verificación</h1>
+
+            <p>
+
+                Hemos enviado un código de <strong>6 dígitos</strong>
+                a tu correo institucional.
+
+            </p>
+
+            <!-- Código -->
+
+            <div class="code-inputs">
+
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+                <input type="text" maxlength="1">
+
+            </div>
+
+            <!-- Temporizador -->
+
+            <p class="timer">
+
+                Reenviar código en <span id="countdown">00:30</span>
+
+            </p>
+
+            <!-- Botón -->
+
+            <button class="verify-btn">
+
+                Verificar
+
+            </button>
+
+        </div>
+
+    </main>
+
+    <script src="js/verify-code.js"></script>
+
+</body>
+
+</html>
