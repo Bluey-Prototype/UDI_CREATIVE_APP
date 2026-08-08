@@ -1,0 +1,210 @@
+/* ==========================================
+                CHAT
+========================================== */
+
+.chat-page{
+
+    min-height:100vh;
+
+    background:#F7F8FC;
+
+    padding:25px 20px;
+
+}
+
+/* HEADER */
+
+.chat-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+}
+
+.chat-header h2{
+
+    font-size:1.8rem;
+
+    color:var(--dark);
+
+}
+
+.back-btn{
+
+    width:44px;
+    height:44px;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    border-radius:50%;
+
+    background:#fff;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    box-shadow:var(--shadow);
+
+}
+
+/* BUSCADOR */
+
+.search-box{
+
+    display:flex;
+
+    align-items:center;
+
+    background:#fff;
+
+    border-radius:18px;
+
+    padding:15px 18px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:30px;
+
+}
+
+.search-box i{
+
+    color:#999;
+
+    margin-right:12px;
+
+}
+
+.search-box input{
+
+    flex:1;
+
+    border:none;
+
+    outline:none;
+
+    background:transparent;
+
+    font-size:1rem;
+
+}
+
+/* LISTA */
+
+.chat-list{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+}
+
+/* ITEM */
+
+.chat-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    background:#fff;
+
+    padding:16px;
+
+    border-radius:18px;
+
+    text-decoration:none;
+
+    color:inherit;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.chat-item:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.chat-item img{
+
+    width:60px;
+
+    height:60px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+}
+
+.chat-info{
+
+    flex:1;
+
+}
+
+.chat-info h3{
+
+    font-size:1rem;
+
+    margin-bottom:5px;
+
+    color:var(--dark);
+
+}
+
+.chat-info p{
+
+    color:#777;
+
+    font-size:.92rem;
+
+}
+
+.chat-meta{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:flex-end;
+
+    gap:10px;
+
+}
+
+.chat-meta span{
+
+    font-size:.8rem;
+
+    color:#999;
+
+}
+
+.unread{
+
+    width:12px;
+
+    height:12px;
+
+    background:var(--primary);
+
+    border-radius:50%;
+
+}

@@ -1,0 +1,144 @@
+.job-page{
+
+    padding:25px 20px 110px;
+
+    background:#F7F8FC;
+
+    min-height:100vh;
+
+}
+
+.job-banner img{
+
+    width:100%;
+
+    height:230px;
+
+    object-fit:cover;
+
+}
+
+.job-content{
+
+    padding:25px;
+
+}
+
+.job-company{
+
+    display:inline-block;
+
+    background:rgba(227,6,19,.1);
+
+    color:var(--primary);
+
+    padding:8px 18px;
+
+    border-radius:30px;
+
+    font-weight:600;
+
+    margin-bottom:20px;
+
+}
+
+.job-content h1{
+
+    margin-bottom:20px;
+
+}
+
+.job-info{
+
+    margin-bottom:25px;
+
+}
+
+.job-info p{
+
+    margin:10px 0;
+
+    color:#666;
+
+}
+
+.job-info i{
+
+    color:var(--primary);
+
+    width:22px;
+
+}
+
+.job-content h3{
+
+    margin:25px 0 12px;
+
+}
+
+.job-content p{
+
+    line-height:1.7;
+
+    color:#555;
+
+}
+
+.job-content ul{
+
+    padding-left:20px;
+
+}
+
+.job-content li{
+
+    margin:10px 0;
+
+}
+
+.apply-btn{
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    width:100%;
+
+    height:55px;
+
+    margin-top:35px;
+
+    border-radius:15px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:.3s;
+
+}
+
+.apply-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+#applyMessage{
+
+    margin-top:18px;
+
+    text-align:center;
+
+    color:#777;
+
+    display:none;
+
+}
+

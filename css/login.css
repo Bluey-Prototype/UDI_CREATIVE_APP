@@ -1,0 +1,368 @@
+/* ==========================================
+                LOGIN
+========================================== */
+
+.login-screen{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    padding:30px 24px;
+
+    background:var(--white);
+
+}
+
+.login-container{
+
+    width:100%;
+    max-width:430px;
+
+}
+
+/* ========= LOGO ========= */
+
+.login-logo{
+
+    width:90px;
+
+    display:block;
+    margin:0 auto 25px;
+
+    animation:fadeUp .8s ease;
+
+}
+
+/* ========= TITULOS ========= */
+
+.login-container h1{
+
+    text-align:center;
+
+    font-size:2rem;
+
+    font-weight:700;
+
+    color:var(--dark);
+
+    margin-bottom:8px;
+
+    animation:fadeUp .9s ease;
+
+}
+
+.login-container p{
+
+    text-align:center;
+
+    color:var(--secondary);
+
+    margin-bottom:35px;
+
+    animation:fadeUp 1s ease;
+
+}
+
+/* ========= FORMULARIO ========= */
+
+form{
+
+    animation:fadeUp 1.1s ease;
+
+}
+
+.input-group{
+
+    margin-bottom:22px;
+
+}
+
+.input-group label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    color:var(--dark);
+
+}
+
+.input-group input{
+
+    width:100%;
+
+    height:56px;
+
+    padding:0 18px;
+
+    border:1px solid #D9D9D9;
+
+    border-radius:16px;
+
+    background:#fff;
+
+    outline:none;
+
+    font-size:1rem;
+
+    transition:.3s;
+
+}
+
+.input-group input:focus{
+
+    border-color:var(--primary);
+
+    box-shadow:0 0 0 4px rgba(227,6,19,.12);
+
+}
+
+/* ========= PASSWORD ========= */
+
+.password-box{
+
+    position:relative;
+
+}
+
+.password-box input{
+
+    padding-right:55px;
+
+}
+
+.password-box i{
+
+    position:absolute;
+
+    top:50%;
+    right:18px;
+
+    transform:translateY(-50%);
+
+    color:#9E9E9E;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.password-box i:hover{
+
+    color:var(--primary);
+
+}
+
+/* ========= OLVIDÉ CONTRASEÑA ========= */
+
+.forgot{
+
+    display:block;
+
+    text-align:right;
+
+    margin-top:-8px;
+    margin-bottom:28px;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-size:.9rem;
+
+    transition:.3s;
+
+}
+
+.forgot:hover{
+
+    opacity:.8;
+
+}
+
+/* ========= BOTÓN ========= */
+
+.login-btn{
+
+    width:100%;
+
+    height:56px;
+
+    border:none;
+
+    border-radius:16px;
+
+    background:var(--primary);
+
+    color:#fff;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    box-shadow:var(--shadow);
+
+}
+
+.login-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+.login-btn:active{
+
+    transform:scale(.98);
+
+}
+
+/* ========= SEPARADOR ========= */
+
+.separator{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    margin:35px 0;
+
+}
+
+.separator span{
+
+    flex:1;
+
+    height:1px;
+
+    background:#E5E5E5;
+
+}
+
+.separator p{
+
+    margin:0;
+
+    color:#999;
+
+    font-size:.9rem;
+
+}
+
+/* ========= LOGIN SOCIAL ========= */
+
+.social{
+
+    display:flex;
+
+    gap:15px;
+
+}
+
+.social button{
+
+    flex:1;
+
+    height:54px;
+
+    border:1px solid #D9D9D9;
+
+    background:#fff;
+
+    border-radius:16px;
+
+    display:flex;
+
+    justify-content:center;
+    align-items:center;
+
+    gap:10px;
+
+    cursor:pointer;
+
+    transition:.25s;
+
+    font-size:.95rem;
+
+    font-weight:500;
+
+}
+
+.social button:hover{
+
+    background:#F7F7F7;
+
+    transform:translateY(-2px);
+
+}
+
+.social i{
+
+    font-size:20px;
+
+}
+
+/* ========= REGISTRO ========= */
+
+.register{
+
+    margin-top:40px;
+
+    text-align:center;
+
+    color:#666;
+
+    font-size:.95rem;
+
+}
+
+.register a{
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    font-weight:700;
+
+}
+
+.register a:hover{
+
+    text-decoration:underline;
+
+}
+
+/* ========= ANIMACIÓN ========= */
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(25px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}

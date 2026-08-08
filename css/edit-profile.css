@@ -1,0 +1,668 @@
+/*=========================================
+            EDIT PROFILE
+=========================================*/
+
+.edit-profile-page{
+
+    min-height:100vh;
+
+    background:#F7F8FC;
+
+    padding:25px 20px 110px;
+
+}
+
+/*=========================================
+                HEADER
+=========================================*/
+
+.page-header{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:18px;
+
+    margin-bottom:25px;
+
+}
+
+.page-header h2{
+
+    font-size:1.7rem;
+
+    font-weight:700;
+
+    color:var(--dark);
+
+}
+
+.back-btn{
+
+    width:46px;
+
+    height:46px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    background:#FFFFFF;
+
+    color:var(--primary);
+
+    text-decoration:none;
+
+    box-shadow:var(--shadow);
+
+    transition:.3s;
+
+}
+
+.back-btn:hover{
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================
+            FOTO Y PORTADA
+=========================================*/
+
+.photo-section{
+
+    margin-bottom:80px;
+
+}
+
+.cover-photo{
+
+    position:relative;
+
+    height:180px;
+
+    border-radius:24px;
+
+    overflow:hidden;
+
+    box-shadow:var(--shadow);
+
+}
+
+.cover-photo img{
+
+    width:100%;
+
+    height:100%;
+
+    object-fit:cover;
+
+}
+
+.cover-photo button{
+
+    position:absolute;
+
+    right:15px;
+
+    bottom:15px;
+
+    width:46px;
+
+    height:46px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    box-shadow:0 8px 18px rgba(0,0,0,.15);
+
+}
+
+.profile-photo{
+
+    position:relative;
+
+    width:130px;
+
+    margin:auto;
+
+    margin-top:-65px;
+
+}
+
+.profile-photo img{
+
+    width:130px;
+
+    height:130px;
+
+    border-radius:50%;
+
+    object-fit:cover;
+
+    border:5px solid #FFFFFF;
+
+    box-shadow:0 10px 25px rgba(0,0,0,.15);
+
+}
+
+.profile-photo button{
+
+    position:absolute;
+
+    bottom:5px;
+
+    right:0;
+
+    width:42px;
+
+    height:42px;
+
+    border:none;
+
+    border-radius:50%;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+}
+
+/*=========================================
+                FORMULARIO
+=========================================*/
+
+.form-card{
+
+    background:#FFFFFF;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:25px;
+
+}
+
+.input-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    margin-bottom:22px;
+
+}
+
+.input-group:last-child{
+
+    margin-bottom:0;
+
+}
+
+.input-group label{
+
+    font-weight:600;
+
+    margin-bottom:10px;
+
+    color:#444;
+
+}
+
+.input-group input,
+
+.input-group textarea,
+
+.input-group select{
+
+    border:2px solid #ECECEC;
+
+    border-radius:15px;
+
+    padding:15px;
+
+    font-size:1rem;
+
+    font-family:inherit;
+
+    outline:none;
+
+    transition:.3s;
+
+    background:#FFFFFF;
+
+}
+
+.input-group textarea{
+
+    resize:none;
+
+}
+
+.input-group input:focus,
+
+.input-group textarea:focus,
+
+.input-group select:focus{
+
+    border-color:var(--primary);
+
+}
+
+
+
+
+/*=========================================
+            TARJETAS
+=========================================*/
+
+.card{
+
+    background:#FFFFFF;
+
+    border-radius:24px;
+
+    padding:25px;
+
+    box-shadow:var(--shadow);
+
+    margin-bottom:25px;
+
+}
+
+.card h3{
+
+    margin-bottom:18px;
+
+    font-size:1.2rem;
+
+    color:var(--dark);
+
+}
+
+
+/*=========================================
+        ETIQUETAS DINÁMICAS
+=========================================*/
+
+.tags-container{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:12px;
+
+    margin-bottom:18px;
+
+}
+
+.tag{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:10px;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    padding:10px 16px;
+
+    border-radius:30px;
+
+    font-size:.95rem;
+
+    font-weight:600;
+
+    animation:fadeTag .25s ease;
+
+}
+
+.tag button{
+
+    border:none;
+
+    background:none;
+
+    color:#FFFFFF;
+
+    cursor:pointer;
+
+    font-size:1rem;
+
+    transition:.2s;
+
+}
+
+.tag button:hover{
+
+    transform:scale(1.2);
+
+}
+
+.tag-input{
+
+    width:100%;
+
+    height:52px;
+
+    border:2px dashed #D9D9D9;
+
+    border-radius:16px;
+
+    padding:0 18px;
+
+    outline:none;
+
+    font-size:1rem;
+
+    transition:.3s;
+
+    background:#FFFFFF;
+
+}
+
+.tag-input:focus{
+
+    border-color:var(--primary);
+
+}
+
+.tag-input::placeholder{
+
+    color:#999;
+
+}
+
+@keyframes fadeTag{
+
+    from{
+
+        opacity:0;
+
+        transform:scale(.8);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:scale(1);
+
+    }
+
+}
+
+/*=========================================
+                BOTONES
+=========================================*/
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+.cancel-btn,
+
+#saveBtn{
+
+    flex:1;
+
+    height:55px;
+
+    border-radius:16px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    text-decoration:none;
+
+    cursor:pointer;
+
+    transition:.3s;
+
+}
+
+.cancel-btn{
+
+    background:#FFFFFF;
+
+    color:var(--primary);
+
+    border:2px solid var(--primary);
+
+    box-shadow:var(--shadow);
+
+}
+
+.cancel-btn:hover{
+
+    background:#FFF3F3;
+
+    transform:translateY(-3px);
+
+}
+
+#saveBtn{
+
+    border:none;
+
+    background:var(--primary);
+
+    color:#FFFFFF;
+
+    box-shadow:0 8px 18px rgba(227,6,19,.25);
+
+}
+
+#saveBtn:hover{
+
+    background:#C00515;
+
+    transform:translateY(-3px);
+
+}
+
+/*=========================================
+            EFECTOS INPUTS
+=========================================*/
+
+.input-group input:hover,
+
+.input-group textarea:hover,
+
+.input-group select:hover{
+
+    border-color:#D0D0D0;
+
+}
+
+/*=========================================
+            RESPONSIVE
+=========================================*/
+
+@media(max-width:480px){
+
+    .buttons{
+
+        flex-direction:column;
+
+    }
+
+    .cover-photo{
+
+        height:150px;
+
+    }
+
+    .profile-photo img{
+
+        width:110px;
+
+        height:110px;
+
+    }
+
+    .profile-photo{
+
+        width:110px;
+
+        margin-top:-55px;
+
+    }
+
+}
+
+/*=========================================
+            ANIMACIONES
+=========================================*/
+
+.form-card,
+
+.card,
+
+.cover-photo{
+
+    animation:fadeUp .45s ease;
+
+}
+
+@keyframes fadeUp{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+/*=========================================
+            BOTONES MODERNOS
+=========================================*/
+
+.buttons{
+
+    display:flex;
+
+    gap:15px;
+
+    margin-top:35px;
+
+}
+
+.cancel-btn,
+
+#saveBtn{
+
+    flex:1;
+
+    height:58px;
+
+    border-radius:50px;
+
+    font-size:1rem;
+
+    font-weight:600;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    text-decoration:none;
+
+    transition:.3s;
+
+    cursor:pointer;
+
+}
+
+.cancel-btn{
+
+    background:#FFFFFF;
+
+    color:var(--primary);
+
+    border:2px solid #b90015;
+
+
+}
+
+.cancel-btn:hover{
+
+    border-color:var(--primary);
+
+    background:#FFF6F6;
+
+    transform:translateY(-3px);
+
+}
+
+
+@media(max-width:480px){
+
+    .buttons{
+
+        flex-direction:column-reverse;
+
+        gap:15px;
+
+    }
+
+    .cancel-btn,
+    #saveBtn{
+
+        width:100%;
+
+        flex:none;
+
+    }
+
+}
